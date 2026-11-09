@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="mr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#123b2b"><meta name="description" content="मराठी डेअरी व्यवस्थापन — दूध, पशुखाद्य आणि १० दिवसांचा हिशोब">
+<link rel="icon" href="/icons/icon-192.png"><link rel="apple-touch-icon" href="/icons/icon-192.png"><link rel="manifest" href="/manifest.json">
+<title>DairyAI · सोपी डेअरी व्यवस्थापन</title><link rel="stylesheet" href="/styles.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<div id="auth" class="auth-shell"></div>
+<div id="shell" class="shell" hidden>
+  <aside class="sidebar">
+    <div class="brand"><div class="brandmark">✦</div><div><b>DairyAI</b><small>SMART DAIRY</small></div></div>
+    <div class="nav-list" id="sideNav"></div>
+    <div class="side-foot"><span class="online-dot"></span><span id="dairyName">डेअरी</span><small>मराठी · सोपे व्यवस्थापन</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div><div class="eyebrow" id="breadcrumb">DAIRYAI / HOME</div><h1 id="pageTitle">मुख्यपृष्ठ</h1></div>
+      <div class="header-actions"><span id="topTerm" class="small-muted"></span><button class="iconbutton" data-action="language" id="langButton" title="Switch language">EN</button><button class="iconbutton" data-action="logout" title="Log out" aria-label="Log out">↪</button></div>
+    </header>
+    <main id="view" class="view" aria-live="polite"></main>
+    <footer class="footer">DairyAI · AI reads, owner approves, backend calculates</footer>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="मुख्य पर्याय"></nav>
+</div>
+<dialog id="dialog" aria-label="तपशील"><div id="dialogBody"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
